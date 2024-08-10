@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles</title>
+    <link rel="stylesheet" href="css/pasteles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="img/logo oficial.png" class="fa-image" alt="Logo">
+            <ul>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="acerca de2.html">ACERCA DE</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <div class="intro">
+            <h1 class="pasteles">PASTELES</h1>
+            <p class="pasteles2">Cada uno cuesta $12.00</p>
+        </div>
+
+        <div class="product-container">
+            <div class="product-item">
+                <img src="img5/chocolate.jpeg" alt="Pastel de chocolate" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Pastel de chocolate</span>
+                    <span class="product-price">$12.00</span>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="img5/oreo.jpeg" alt="Pastel de oreo" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Pastel de oreo</span>
+                    <span class="product-price">$12.00</span>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="img5/fresa.jpg" alt="Pastel de fresa" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Pastel de fresa</span>
+                    <span class="product-price">$12.00</span>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="img5/arandano.jpeg" alt="Pastel de arándano" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Pastel de arándano</span>
+                    <span class="product-price">$12.00</span>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="img5/limon.jpeg" alt="Pastel de limón" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Pastel de limón</span>
+                    <span class="product-price">$12.00</span>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="img5/napolitano.jpeg" alt="Pastel napolitano" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Pastel napolitano</span>
+                    <span class="product-price">$12.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie">
+        Derechos reservados JAN2024
+        <a href="https?" class="insta">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" class="face">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://web.whatsapp.com/" class="whats">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </footer>
+
+    <script>
+        function changeMainImage(newSrc) {
+            document.getElementById('mainImage').src = newSrc;
+        }
+    </script>
+</body>
+</html>

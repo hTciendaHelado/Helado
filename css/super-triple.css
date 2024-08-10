@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Rosa suave */
+}
+
+header {
+    background-color: #f8bbd0; /* Rosa claro */
+    padding: 10px;
+}
+
+nav.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu img {
+    width: 80px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ec407a; /* Rosa intenso */
+}
+
+/* Main Content */
+.padre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.padre > div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.imagen {
+    width: 100%; /* Ajusta el ancho de la imagen según el contenedor */
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #d81b60; /* Rosa fuerte */
+}
+
+h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.container_2 {
+    margin-top: 20px;
+}
+
+.sabores {
+    font-size: 28px;
+    color: #d81b60; /* Rosa fuerte */
+    margin: 0;
+}
+
+.espejo {
+    font-size: 16px;
+    color: #333;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.lista li {
+    margin: 5px 0;
+}
+
+/* Toppings Section */
+.header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.p {
+    font-size: 18px;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    color: #d81b60; /* Rosa fuerte */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-item {
+    text-align: center;
+    flex: 1 1 200px; /* Ajusta el tamaño de los elementos */
+    max-width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-item p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Footer */
+.pie {
+    background-color: #f8bbd0; /* Rosa claro */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e1b5b0; /* Rosa oscuro */
+}
+
+.pie a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.pie a:hover {
+    color: #ec407a; /* Rosa intenso */
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu img {
+        width: 80px;
+    }
+
+    .sabores {
+        font-size: 24px;
+    }
+
+    .espejo {
+        font-size: 14px;
+    }
+
+    .image-item {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        max-width: none;
+    }
+
+    .p, h1 {
+        font-size: 16px;
+    }
+
+    .pie {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1024px) {
+    .menu {
+        padding: 10px 5%;
+    }
+}

@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Rosa suave */
+}
+
+header {
+    background-color: #f8bbd0; /* Rosa claro */
+    padding: 10px;
+}
+
+nav.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu .logo {
+    width: 100px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ec407a; /* Rosa intenso */
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.product-details {
+    flex: 1;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #d81b60; /* Rosa fuerte */
+}
+
+h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.flavors {
+    flex: 1;
+}
+
+.flavors h1 {
+    font-size: 28px;
+    color: #d81b60; /* Rosa fuerte */
+    margin: 0;
+}
+
+.flavor-list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.flavor-list li {
+    margin: 5px 0;
+}
+
+/* Toppings Section */
+.toppings {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.toppings h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.toppings h1 {
+    font-size: 36px;
+    color: #d81b60; /* Rosa fuerte */
+}
+
+.toppings p {
+    font-size: 16px;
+    color: #333;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-item {
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-item p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer.bottom {
+    background-color: #f8bbd0; /* Rosa claro */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e1b5b0; /* Rosa oscuro */
+}
+
+footer.bottom a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer.bottom a:hover {
+    color: #ec407a; /* Rosa intenso */
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    nav.menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .logo {
+        width: 80px;
+    }
+
+    .flavors h1 {
+        font-size: 24px;
+    }
+
+    .image-item {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        max-width: none;
+    }
+
+    .p, h1 {
+        font-size: 16px;
+    }
+
+    footer.bottom {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1024px) {
+    nav.menu {
+        padding: 10px 5%;
+    }
+}

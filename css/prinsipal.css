@@ -1,0 +1,168 @@
+body {
+    background-color: #db999b;
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-bottom: 2px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+.fa-image {
+    width: 85px;
+    margin-bottom: 10px;
+}
+
+.carro {
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 100%;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 0px 65px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #D49EA1;
+    border: 1px solid black;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu > li {
+    margin-right: 90000000px;/*PARA LA PAGINA DE ARRIBA DONDE ESTA EL MUENU*/
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 90px;
+    display: block;
+}
+
+.submenu a {
+    color: black;
+}
+
+#fondo {
+    display: flex;
+    height: 80vh;
+    color: rgb(255, 255, 255);
+    font-family: 50% ;
+    font-size: 1000px;
+    }
+    .mancha2{
+        width:190px ;
+        height: 160px;
+        margin-top: 20%;
+    }
+    #fondo div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    }
+    .mancha{
+        width: 600px;
+        height: 10px;
+        margin-right: 10%;
+        margin-bottom: 20%;
+        margin-left: 60%;
+    }
+    .contenedor-img {
+    width: 20%;
+    margin-bottom:20px;
+    margin-right: 20%;
+    }
+    
+    .contenedor-img img {
+    height:100%;
+    }
+    
+    
+   
+.texto{
+    font-size: 90px;
+}
+
+
+.pie{
+    background-color: #D49EA1;
+    color: white;
+    padding-top: 12px;
+    padding-left: 20px;
+    text-align: left;
+    position: fixed;
+    height: 200px;
+    width: 100%;
+    top: 90%;
+    font-size: 30px;
+    border: 1px inset rgb(247, 151, 151);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:  
+    "slnt" 0;
+    
+    }
+    
+    .pie a{
+        padding: 0px 30px;
+    }
+    .insta{
+        color: white;
+        margin-left: 750px;
+        font-size: 3ch;
+    }
+    .face{
+        color: white;
+        margin-left: 40px;
+        font-size: 3ch;
+    }
+    .whats{
+        color: white;
+        margin-left: 40px;
+        font-size: 3ch;
+    }
+
+ 
+    @media (min-width: 200px) and (max-width: 1080px) {
+        .texto{
+            font-size: 45px;
+
+        }
+      
+            
+            
+     
+        
+    }

@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Rosa suave */
+}
+
+header {
+    background-color: #f8bbd0; /* Rosa claro */
+    padding: 10px;
+}
+
+nav.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu img {
+    width: 100px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ec407a; /* Rosa intenso */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.malteadas {
+    font-size: 36px;
+    color: #d81b60; /* Rosa fuerte */
+}
+
+.price-info {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-right: 2px solid #f48fb1; /* Rosa pálido */
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    text-align: left;
+}
+
+.product-name {
+    font-size: 18px;
+    color: #d81b60; /* Rosa fuerte */
+}
+
+.product-price {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer */
+.pie {
+    background-color: #f8bbd0; /* Rosa claro */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e1b5b0; /* Rosa oscuro */
+}
+
+.pie a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.pie a:hover {
+    color: #ec407a; /* Rosa intenso */
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu img {
+        width: 80px;
+    }
+
+    .malteadas {
+        font-size: 28px;
+    }
+
+    .price-info {
+        font-size: 16px;
+    }
+
+    .product-item {
+        width: 200px;
+    }
+
+    .product-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .product-name, .product-price {
+        font-size: 16px;
+    }
+
+    .pie {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1024px) {
+    .menu {
+        padding: 10px 5%;
+    }
+
+    .product-item img {
+        width: 120px;
+        height: 120px;
+    }
+}

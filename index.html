@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Menu</title>
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <style>
+        body {
+    background-color: #db999b;
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-bottom: 2px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+
+}
+
+.fa-image {
+    width: 85px;
+    margin-bottom: 10px;
+}
+
+.carro {
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 40%;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 0px 65px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #D49EA1;
+    border: 1px solid black;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu > li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 100px;
+    display: block;
+}
+
+.submenu a {
+    color: black;
+}
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0px;
+    margin: 0;
+    background-color: #D49EA1;
+}
+
+.submenu li {
+    width: 160px;
+}
+
+.submenu a {
+    padding: 1px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;  
+    margin-left: 100px;
+    border: 1px solid;
+    margin-top: 36px;
+}
+
+.item p{
+     margin-left: 100px;
+     font-size: 25px;
+     font-family: "Kaushan Script", cursive;
+     font-weight: 400;
+     font-style: normal;
+     
+      
+    
+}
+
+.item2 {
+    text-align: center;
+}
+
+.item2 img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;  
+    margin-left: 510px;
+    border: 1px solid;
+    margin-top: 36px;
+}
+
+.item2 p{
+    margin-left: 515px;
+    font-size: 25px;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+      
+
+}
+
+.silla{
+    text-align: center;
+}
+
+.silla img{
+    position: relative;
+    bottom: 225px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;  
+    margin-right: 550px;
+    border: 1px solid;
+   
+}
+
+.silla p{
+    position: relative;
+    bottom: 225px;
+    margin-right:550px ;
+    font-size: 25px;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+}
+
+.silla2{
+    position: relative;
+    left: 10px;
+    font-size: 25px;
+    
+
+        font-family: "Kaushan Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+    
+}
+.silla3{
+    position: relative;
+    left: 10px;
+    font-size: 25px;
+    
+
+        font-family: "Kaushan Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+    
+
+}
+
+.pie{
+    background-color: #D49EA1;
+    color: white;
+    padding-top: 12px;
+    padding-left: 20px;
+    text-align: left;
+    position: fixed;
+    height: 200px;
+    width: 100%;
+    top: 90%;
+    font-size: 30px;
+    border: 1px inset rgb(247, 151, 151);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:  
+    "slnt" 0;
+    
+    }
+    
+    .pie a{
+        padding: 0px 30px;
+    }
+    .insta{
+        color: white;
+        margin-left: 750px;
+        font-size: 3ch;
+    }
+    .face{
+        color: white;
+        margin-left: 40px;
+        font-size: 3ch;
+    }
+    .whats{
+        color: white;
+        margin-left: 40px;
+        font-size: 3ch;
+    }
+@media (max-width: 720px) {
+    .menu {
+        flex-direction: column;
+    }
+     .menu li {
+        margin-bottom: 10px;
+    }
+    .item, .item2, .silla {
+        margin: 10px;
+    }
+     .item img, .item2 img, .silla img {
+        max-width: 100%;
+    }
+}
+@media (min-width: 721px) and (max-width: 1024px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu li {
+        margin-bottom: 15px;
+    }
+     .item, .item2, .silla {
+        margin: 15px;
+    }
+      .item img, .item2 img, .silla img {
+        max-width: 80%;
+    }
+}
+@media (min-width: 1025px) {
+    .menu {
+        flex-direction: row;
+    }
+      .menu li {
+        margin-right: 20px;
+    }  
+     .item, .item2, .silla {
+        margin: 20px;
+    }
+    .item img, .item2 img, .silla img {
+        max-width: 300px;
+    }
+}
+    </style>
+    <nav class="menu">
+        <img src="img/logo oficial.png" class="fa-image" alt="">
+       
+        <ul>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="acerca de2.html">ACERCA DE<br>HELADOS JAN</a></li>
+            <li><a href="">INICIO</a></li>
+        </ul>
+    </nav>
+</header>
+ <div class="menu">
+        <div class="item">
+            
+            <a href="super uno.html">
+                <img src="fondos/sorbete.jpg" >
+            </a><p >Super uno</p>
+        </div>
+        <div class="item">
+            <a href="super triple.html">
+                <img src="fondos/triple.jpeg" alt="super triple">
+            </a><p class="silla2">Super triple</p>
+        </div>
+        <div class="item">
+            <a href="paletas2.html">
+                <img src="fondos/paletas.jpeg" alt="paletas de sabores">
+            </a> <p class="silla3">Paletas de sabores</p>
+        </div>
+    </div>
+
+    <div class="item2">
+        <a href="Malteadas.html">
+            <img src="fondos/malteada.jpeg" alt="malteda">
+        </a> <p>Malteadas</p>
+    </div>
+
+    <div class="silla">
+        <a href="pasteles.html">
+            <img src="fondos/pastel.jpeg" alt="pastel">
+        </a><p>Pasteles</p>
+    </div>
+   <div class="bottom">
+        <footer class="pie">
+          Derechos reservados JAN2024
+          <a href="https?" class="insta">
+              <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" class="face">
+              <i class="fa-brands fa-facebook"></i></a>
+          <a href="https://web.whatsapp.com/" class="whats">
+              <i class="fa-brands fa-whatsapp"></i></a>
+           </footer>
+      </div>
+      </div>
+</body>
+</html>

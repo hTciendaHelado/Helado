@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malteadas</title>
+    <link rel="stylesheet" href="css/Malteadas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="img/logo oficial.png" class="fa-image" alt="Logo">
+            <ul>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="acerca de2.html">ACERCA DE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h1 class="malteadas">MALTEADAS</h1>
+            <p class="price-info">Precio $2.00</p>
+        </div>
+
+        <div class="product-container">
+            <div class="product-item">
+                <img src="img2/malteada de oreo.jpeg" alt="Malteada de oreo" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Malteada de oreo</span>
+                    <span class="product-price">$2.00</span>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="img2/malteada de cafe.jpeg" alt="Malteada de café" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Malteada de café</span>
+                    <span class="product-price">$2.00</span>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="img2/malteada de fresa.jpeg" alt="Malteada de fresa" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Malteada de fresa</span>
+                    <span class="product-price">$2.00</span>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="img2/malteada de caramelo.jpeg" alt="Malteada de caramelo" onclick="changeMainImage(this.src)">
+                <div class="product-info">
+                    <span class="product-name">Malteada de caramelo</span>
+                    <span class="product-price">$2.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie">
+        Derechos reservados JAN2024
+        <a href="https?" class="insta">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" class="face">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://web.whatsapp.com/" class="whats">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </footer>
+
+    <script>
+        function changeMainImage(newSrc) {
+            document.getElementById('mainImage').src = newSrc;
+        }
+    </script>
+</body>
+</html>

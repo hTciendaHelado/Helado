@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Rosa suave */
+}
+
+header {
+    background-color: #f8bbd0; /* Rosa claro */
+    padding: 10px;
+}
+
+nav.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu img {
+    width: 100px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ec407a; /* Rosa intenso */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pasteles {
+    font-size: 36px;
+    color: #d81b60; /* Rosa fuerte */
+}
+
+.pasteles2 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px; /* Ajusta el ancho según sea necesario */
+}
+
+.product-item img {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px; /* Ajusta el tamaño según sea necesario */
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 10px;
+    flex: 1;
+}
+
+.product-name {
+    font-size: 18px;
+    color: #d81b60; /* Rosa fuerte */
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer */
+.pie {
+    background-color: #f8bbd0; /* Rosa claro */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e1b5b0; /* Rosa oscuro */
+}
+
+.pie a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.pie a:hover {
+    color: #ec407a; /* Rosa intenso */
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu img {
+        width: 80px;
+    }
+
+    .pasteles {
+        font-size: 28px;
+    }
+
+    .pasteles2 {
+        font-size: 16px;
+    }
+
+    .product-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-info {
+        text-align: center;
+    }
+
+    .product-name, .product-price {
+        font-size: 16px;
+    }
+
+    .pie {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1024px) {
+    .menu {
+        padding: 10px 5%;
+    }
+}

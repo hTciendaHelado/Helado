@@ -1,0 +1,178 @@
+
+body{
+    background-color: #db999b;
+    overflow: hidden;
+    
+    }
+    
+    * {
+    padding: 0;
+    margin: 0;
+    }
+    
+    .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    
+    }
+    
+    .fa-image{
+    width: 85px;
+    margin-bottom: 10px;
+    }
+    
+    .carro{
+        color: white;
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    
+    ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20%;
+    margin-bottom: 20px;
+    }
+    
+    .menu a{
+    display: inline-block;
+    padding: 0px 65px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    
+    }
+    
+    nav {
+    background-color:#D49EA1;;
+    border: 1px solid black;
+    }
+    
+    
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    flex: 1; 
+}
+
+.main-item {
+    text-align: center;
+    flex: 1;
+    color: white;
+
+}
+
+.main-item img {
+    position: relative;
+    top: 40px;  
+    height: 340px;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+    border-radius: 35px;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+
+    
+}
+
+.malteadas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 2;
+    color: white;
+}
+
+.malteada-item {
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    gap:20px;
+    width: calc(50% - 30px); 
+    margin: 5px;
+    color: white;
+    margin-top: 50px;
+}
+
+.malteada-item img {
+    width: 120px; 
+    height: 120px;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    padding: 2px;
+   
+    
+}
+
+.malteada-item p {
+    margin: 0;
+}
+
+.fraile{
+    position: relative;
+   top: 35px;
+}
+
+
+.pie{
+    background-color: #D49EA1;
+    color: white;
+    padding-top: 12px;
+    padding-left: 20px;
+    text-align: left;
+    position: fixed;
+    height: 200px;
+    width: 100%;
+    top: 90%;
+    font-size: 30px;
+    border: 1px inset rgb(247, 151, 151);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:  
+    "slnt" 0;
+    
+    }
+    
+    .pie a{
+        padding: 0px 30px;
+    }
+    .insta{
+        color: white;
+        margin-left: 750px;
+        font-size: 3ch;
+    }
+    .face{
+        color: white;
+        margin-left: 40px;
+        font-size: 3ch;
+    }
+    .whats{
+        color: white;
+        margin-left: 40px;
+        font-size: 3ch;
+    }
+
+    @media (min-width: 720px) and (max-width: 2532px) {
+        .container {
+          width: 90%;
+          /* Otros estilos específicos para este rango de tamaño de pantalla */
+        }
+      
+        .text {
+          font-size: 1.2rem;
+          /* Otros estilos específicos para este rango de tamaño de pantalla */
+        }
+      }

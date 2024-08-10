@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    background-color: #fce4ec; /* Rosa suave */
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+nav.menu {
+    background-color: #f8bbd0; /* Rosa claro */
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1b5b0; /* Rosa oscuro */
+}
+
+.menu img {
+    width: 85px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #ec407a; /* Rosa intenso */
+    color: #fff;
+    border-radius: 4px;
+}
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    background-color: #f8bbd0;
+    padding: 0;
+}
+
+.submenu li a {
+    padding: 10px;
+    color: #333;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* Main Content */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 10%;
+    justify-content: center; /* Center items horizontally */
+}
+
+.item {
+    text-align: center;
+    width: 180px;
+}
+
+.item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #f48fb1; /* Rosa pálido */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 18px;
+    font-family: 'Kaushan Script', cursive;
+    color: #d81b60; /* Rosa fuerte */
+    margin: 10px 0;
+}
+
+/* Footer */
+.pie {
+    background-color: #f8bbd0; /* Rosa claro */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e1b5b0;
+}
+
+.pie a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.pie a:hover {
+    color: #ec407a; /* Rosa intenso */
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    .menu {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu img {
+        width: 70px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 150px;
+    }
+
+    .item img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pie {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1024px) {
+    .menu {
+        padding: 20px 5%;
+    }
+
+    .product-container {
+        flex-wrap: wrap;
+    }
+}
